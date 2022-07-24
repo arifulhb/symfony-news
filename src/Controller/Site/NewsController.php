@@ -9,7 +9,11 @@ use Symfony\Component\Routing\Annotation\Route;
 #[Route(name: 'news.')]
 class NewsController extends AbstractController
 {
-    #[Route('/{year}/{month}/{day}/{slug}', name: 'index', methods: ['GET', 'HEAD'])]
+    #[Route('/{year}/{month}/{day}/{slug}',
+        name: 'index',
+        requirements: ['year' => '\d+', 'month' => '\d+', 'day' => '\d+', 'slug' => '^[a-z][-a-z0-9_]*$'],
+        methods: ['GET', 'HEAD']
+    )]
     public function index(int $year, int $month, int $day, string $slug): Response
     {
         $slug = "/$year/$month/$day/$slug";
