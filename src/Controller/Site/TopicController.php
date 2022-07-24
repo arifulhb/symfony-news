@@ -6,10 +6,10 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-#[Route('/', name: 'topic.')]
+#[Route(name: 'topic.')]
 class TopicController extends AbstractController
 {
-    #[Route('/{topic}', name: 'index', requirements: ['slug' => '^[a-z][-a-z0-9_]*$'], methods: ['GET', 'HEAD'],)]
+    #[Route('/{topic}', name: 'index', requirements: ['topic' => '^[a-z][-a-z0-9_]*$'], methods: ['GET', 'HEAD'], priority: 0)]
     public function index(string $topic): Response
     {
         return $this->render('site/topic/index.html.twig', [

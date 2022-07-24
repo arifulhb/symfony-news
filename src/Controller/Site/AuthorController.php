@@ -6,10 +6,10 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-#[Route('/authors', name: 'authors.')]
+#[Route(name: 'authors.')]
 class AuthorController extends AbstractController
 {
-    #[Route('/', name: 'index', methods: ['GET', 'HEAD'])]
+    #[Route('/authors', name: 'index', methods: ['GET', 'HEAD'])]
     public function index(): Response
     {
         return $this->render('site/author/index.html.twig', [
