@@ -1,5 +1,11 @@
-import { startStimulusApp } from '@symfony/stimulus-bridge';
+import 'bootstrap';
+import 'boxicons';
+import 'isotope-layout';
+import 'glightbox/dist/js/glightbox';
+import 'aos/dist/aos';
+import './theme/js/main';
 
+import { startStimulusApp } from '@symfony/stimulus-bridge';
 // Registers Stimulus controllers from controllers.json and in the controllers/ directory
 export const app = startStimulusApp(require.context(
     '@symfony/stimulus-bridge/lazy-controller-loader!./controllers',
