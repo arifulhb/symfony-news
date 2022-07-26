@@ -1,0 +1,7 @@
+.home-header{
+    font-size: 72px;
+    font-weight: bolder;
+}
+.home-header-subtitle-link:hover{
+    color: #ffd584!important;
+}

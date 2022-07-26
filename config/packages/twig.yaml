@@ -1,5 +1,8 @@
 twig:
     default_path: '%kernel.project_dir%/templates'
+    globals:
+        hi: 'hello'
+        menuService: '@App\Service\Site\MenuService'
 
 when@test:
     twig:
