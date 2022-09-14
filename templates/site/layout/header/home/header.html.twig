@@ -1,20 +1,20 @@
-<header id="home-header" class="mb-5">
-    <section class="bg-image "
-             style="background-image: url('/assets/images/header_bg-{{ random(4,6) }}.jpg');height: 292px;">
-        <div class="container-fluid bg-transparent d-flex flex-column">
-            <div class="d-flex justify-content-center">
-                <h1 class="h1 text-white text-uppercase home-header">Symfony News</h1>
-            </div>
-            <div class="d-flex justify-content-center">
-                <p class="h5 text-white">Sunday, 24th July, 2022 |  <a
-                            class="home-header-subtitle-link text-white"
-                            href="#">Watch</a></p>
+<!-- Header -->
+<header>
+    <!-- Header desktop -->
+    <div class="container-menu-desktop">
+
+        {% include 'site/layout/header/topbar.html.twig' %}
+        {% include 'site/layout/header/header-mobile.html.twig' %}
+        {% include 'site/layout/header/menu-mobile.html.twig' %}
+
+        <!--  -->
+        <div class="wrap-logo no-banner container">
+            <!-- Logo desktop -->
+            <div class="logo">
+                <a href="index.html"><img src="images/icons/logo-01.png" alt="LOGO"></a>
             </div>
         </div>
-    </section>
 
-    <div class="border-bottom">
-        {% include 'site/layout/header/home/menu.html.twig' %}
+        {% include 'site/layout/header/menu-desktop.html.twig' %}
     </div>
-
 </header>

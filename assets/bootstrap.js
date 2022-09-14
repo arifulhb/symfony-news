@@ -1,9 +1,14 @@
-import 'bootstrap';
-import 'boxicons';
-import 'isotope-layout';
-import 'glightbox/dist/js/glightbox';
-import 'aos/dist/aos';
-import './theme/js/main';
+// import $ from 'jquery';
+// global.$ = global.jQuery = $;
+
+import 'popper.js';
+import 'bootstrap/dist/js/bootstrap';
+// import 'boxicons';
+// import 'isotope-layout';
+// import 'glightbox/dist/js/glightbox';
+// import 'aos/dist/aos';
+// import './theme/js/main';
+import './meganews/js/main';
 
 import { startStimulusApp } from '@symfony/stimulus-bridge';
 // Registers Stimulus controllers from controllers.json and in the controllers/ directory

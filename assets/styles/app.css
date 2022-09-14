@@ -1,10 +1,14 @@
-@import "~bootstrap";
+@import "~bootstrap/dist/css/bootstrap.css";
 @import "~bootstrap-icons";
-@import "~aos/dist/aos.css";
-@import "~boxicons";
-@import "~glightbox/dist/css/glightbox.css";
-@import "../theme/vendor/remixicon/remixicon.css";
-@import "../theme/vendor/swiper/swiper-bundle.min.css";
-@import "../theme/css/style.css";
+/*@import "~aos/dist/aos.css";*/
+/*@import "~boxicons";*/
+/*@import "~glightbox/dist/css/glightbox.css";*/
+@import "../meganews/css/main.css";
+@import "../meganews/css/util.css";
+@import "../meganews/fonts/fontawesome-5.0.8/css/fontawesome-all.css";
+@import "../meganews/fonts/iconic/css/material-design-iconic-font.css";
+@import "../meganews/vendor/animate/animate.css";
+@import "../meganews/vendor/css-hamburgers/hamburgers.css";
+
 @import "./home.css";
 
